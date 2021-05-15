@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor&display=swap');
+
+body,html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: black;
+    font-family: 'indie flower', 'Kdam Thmor';
+    
+}
+.container {
+    display: grid;
+    width: 55%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    grid-gap: 0;
+    
+}
+div {
+    
+    margin-left: 0;
+}
+h2, p {
+    color: white;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    
+}
+.animation {
+    animation: sumir 6s 0s, aparecer 6s 0s normal, piscar 2s 24s infinite;
+} 
+.animation2 {
+    animation: sumir 6s 0s, aparecer 3s 6s normal, piscar 2s 24s infinite;
+} 
+.animation3 {
+    animation: sumir 9s 0s, aparecer 6s 9s normal, piscar 2s 24s infinite;
+} 
+.animation4 {
+    animation: sumir 15s 0s, aparecer 6s 15s normal, piscar 2s 24s infinite;
+} 
+.animation5 {
+    animation: sumir 18s 0s, aparecer 6s 18s normal, piscar 2s 24s infinite;
+} 
+
+
+@keyframes aparecer {
+    
+    from {
+        opacity: 1;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 100%;
+    }
+}
+@keyframes sumir {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes piscar {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes apagar {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0
+    }
+}
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.animation6 {
+    animation: sumir 24s 0s normal, piscar 0.1s 25s normal, apagar .2s 25.1s infinite;
+
+}
